@@ -10,6 +10,9 @@
 
 # production
 /build
+/src/assets/styles/**
+
+/.eslintcache
 
 # misc
 .DS_Store
