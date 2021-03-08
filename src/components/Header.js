@@ -1,8 +1,11 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 
 const Header = () => {
   const [aside, setAside] = useState(false);
+  const history = useHistory();
+
+  useEffect(() => history.listen(() => scrollTo(0, 0)), []);
 
   return (
     <header>

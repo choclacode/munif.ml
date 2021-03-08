@@ -13,11 +13,11 @@ const Articles = () => {
     <section className="articles">
       <h1>Articles</h1>
       <input type="text" placeholder="Enter Search Term"
-        value={search} onChange={(e) => setSearch(e.target.value.trim())}
+        value={search} onChange={(e) => setSearch(e.target.value)}
       />
       <ul>
         {articles && articles
-          .filter(({ title }) => title.toLowerCase().includes(search.toLowerCase()))
+          .filter(({ title }) => title.toLowerCase().includes(search.toLowerCase().trim()))
           .map(({ title, body, slug, author }, i) => (
           <motion.li key={i}
             initial={{ opacity: 0 }}

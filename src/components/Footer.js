@@ -7,7 +7,7 @@ const Footer = () => {
         &copy; 2021 <Link to="/">Munif</Link>
       </span>
       <ul className="social">
-        {links.map(({ h, n }) => (
+        {links.map(([h, n]) => (
           <li key={n}>
             <a href={h} target="_blank">
               <i className={`fab fa-${n}`}></i>
@@ -20,10 +20,10 @@ const Footer = () => {
 }
 
 const links = [
-  { h: 'https://github.com/MuhammadMunif361', n: 'github' },
-  { h: 'https://facebook.com/muhammad.munif.505523', n: 'facebook' },
-  { h: 'https://twitter.com/muhammad__munif', n: 'twitter' },
-  { h: 'https://instagram.com/muhammad01munif', n: 'instagram' },
+  ['https://github.com/MuhammadMunif361', 'github'],
+  ['https://facebook.com/I.am.Munif', 'facebook'],
+  ['https://twitter.com/muhammad__munif', 'twitter'],
+  ['https://instagram.com/muhammad01munif', 'instagram']
 ];
 
 export default Footer;
