@@ -8,7 +8,7 @@ prod:
 		cd build && git init && \
 		git remote add origin https://github.com/MuhammadMunif361/munif.ml.git && \
 		git add . && git commit -m "Deployment" && \
-		git push -u origin main
+		git push -u origin main && cd ..
 
 push:
 	git push origin
