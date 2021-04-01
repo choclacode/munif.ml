@@ -1,5 +1,5 @@
-import { Header, Footer } from './components';
-import { Routes } from './routes';
+import { Header, Footer } from './components'
+import { Routes } from './routes'
 
 const App = () => (
   <>
@@ -9,6 +9,6 @@ const App = () => (
     </main>
     <Footer />
   </>
-);
+)
 
-export default App;
+export default App

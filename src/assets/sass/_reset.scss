@@ -44,7 +44,8 @@ span {
 blockquote {
   border-left: 5px solid $primary-d1;
 }
-input, textarea {
+input,
+textarea {
   padding: 10px;
   background: transparent;
   border: 0;
@@ -54,12 +55,15 @@ input, textarea {
 }
 
 .design {
-  &, & * {
+  &,
+  & * {
     font-family: 'Lobster', 'Poppins', sans-serif;
   }
 }
-pre, code {
-  &, & * {
+pre,
+code {
+  &,
+  & * {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
   }
 }
